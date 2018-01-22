@@ -1,0 +1,5 @@
+'./lorem-ipsum.txt' -> IN Read(filesystem/ReadFile)
+
+Read OUT -> IN WrapString(noflojs-telegram-problem/WrapString)
+
+WrapString OUT -> IN Write(core/Output)

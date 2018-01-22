@@ -1,0 +1,17 @@
+version: '3'
+services:
+  noflo-nodejs:
+    build: .
+    command: --graph graphs/TelegramProblem.fbp --trace --debug --batch --host 0.0.0.0 --secret secret --ide http://localhost:9999/index.html
+    volumes:
+      - ./package.json:/usr/src/app/package.json
+      - ./graphs:/usr/src/app/graphs
+      - ./components:/usr/src/app/components
+    ports:
+      - 3569:3569
+    links:
+      - noflo-ui
+  noflo-ui:
+    image: flowhub/noflo-ui
+    ports:
+      - 9999:9999
