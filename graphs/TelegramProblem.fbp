@@ -1,5 +1,13 @@
-'./lorem-ipsum.txt' -> IN Read(filesystem/ReadFile)
+INPORT=SplitWords.IN:IN
+INPORT=WrapString.LENGTH:LENGTH
 
-Read OUT -> IN WrapString(noflojs-telegram-problem/WrapString)
+' ' -> DELIMITER SplitWords(strings/SplitStr)
 
-WrapString OUT -> IN Write(core/Output)
+' ' -> TOKEN_DELIMITER WrapString(noflojs-telegram-problem/WrapString)
+"\n" -> WRAP_DELIMITER WrapString
+SplitWords OUT -> IN WrapString
+
+' ' -> DELIMITER CompileWords(strings/CompileString)
+WrapString OUT -> IN CompileWords
+
+OUTPORT=CompileWords.OUT:OUT

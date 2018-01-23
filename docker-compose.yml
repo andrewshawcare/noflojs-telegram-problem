@@ -2,7 +2,7 @@ version: '3'
 services:
   noflo-nodejs:
     build: .
-    command: --graph graphs/TelegramProblem.fbp --trace --debug --batch --host 0.0.0.0 --secret secret --ide http://localhost:9999/index.html
+    command: --graph graphs/TelegramProblemDemo.fbp --host 0.0.0.0 --secret secret --ide http://localhost:9999/index.html
     volumes:
       - ./package.json:/usr/src/app/package.json
       - ./graphs:/usr/src/app/graphs
