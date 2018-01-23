@@ -34,10 +34,10 @@ exports.getComponent = () => {
 
       if (current_length > length) {
         token = wrap_delimiter + token;
-        current_length = token.length + token_delimiter.length;
-      } else {
-        current_length += token_delimiter.length;
+        current_length = token.length;
       }
+      
+      current_length += token_delimiter.length;
 
       if (token.includes(wrap_delimiter)) {
         [firstToken, secondToken] = token.split(wrap_delimiter);
