@@ -1,7 +1,7 @@
 {
-  "name": "noflojs-telegram-problem",
+  "name": "telegram-problem",
   "description": "",
-  "repository": "andrewshawcare/noflojs-telegram-problem",
+  "repository": "andrewshawcare/telegram-problem",
   "license": "MIT",
   "version": "0.0.1",
   "dependencies": {
