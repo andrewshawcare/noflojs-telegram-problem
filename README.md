@@ -1,4 +1,4 @@
-# noflojs-telegram-problem
+# telegram-problem
 
 Write a program which accepts lines of text and generates output lines containing as many words as possible, where the number of characters in each line does not exceed a certain length.
 
