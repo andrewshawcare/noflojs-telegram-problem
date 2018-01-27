@@ -3,7 +3,7 @@ INPORT=WrapString.LENGTH:LENGTH
 
 ' ' -> DELIMITER SplitWords(strings/SplitStr)
 
-' ' -> TOKEN_DELIMITER WrapString(noflojs-telegram-problem/WrapString)
+' ' -> TOKEN_DELIMITER WrapString(telegram-problem/WrapString)
 "\n" -> WRAP_DELIMITER WrapString
 SplitWords OUT -> IN WrapString
 
