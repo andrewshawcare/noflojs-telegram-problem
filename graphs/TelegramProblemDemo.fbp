@@ -1,4 +1,4 @@
-80 -> LENGTH TelegramProblem(noflojs-telegram-problem/TelegramProblem)
+80 -> LENGTH TelegramProblem(telegram-problem/TelegramProblem)
 
 './lorem-ipsum.txt' -> IN Read(filesystem/ReadFile)
 Read OUT -> IN TelegramProblem
